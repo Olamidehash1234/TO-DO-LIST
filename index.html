@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>To-Do List</h1>
+            <div class="search-container">
+                 <span id="search-icon">&#128269;</span> <!-- Unicode search icon -->
+                <input type="text" id="search-task" placeholder="Search tasks...">
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="new-task" placeholder="Add a new task...">
+            <input type="datetime-local" id="reminder-time">
+            <button id="add-task">Add</button>
+        </div>
+        <div class="filter-container">
+            <button class="filter" data-filter="all">All</button>
+            <button class="filter" data-filter="active">Active</button>
+            <button class="filter" data-filter="completed">Completed</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="responsive.js"></script>
+</body>
+</html>
